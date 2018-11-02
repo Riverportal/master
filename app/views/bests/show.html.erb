@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Worktime:</strong>
+  <%= @best.worktime %>
+</p>
+
+<p>
+  <strong>Workdate:</strong>
+  <%= @best.workdate %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @best.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @best.amount %>
+</p>
+
+<p>
+  <strong>Interest:</strong>
+  <%= @best.interest %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @best.image %>
+</p>
+
+<%= link_to 'Edit', edit_best_path(@best) %> |
+<%= link_to 'Back', bests_path %>

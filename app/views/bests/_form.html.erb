@@ -1,0 +1,41 @@
+<%= form_for(@best) do |f| %>
+  <% if @best.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@best.errors.count, "error") %> prohibited this best from being saved:</h2>
+
+      <ul>
+      <% @best.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :worktime %><br>
+    <%= f.time_select :worktime %>
+  </div>
+  <div class="field">
+    <%= f.label :workdate %><br>
+    <%= f.datetime_select :workdate %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :interest %><br>
+    <%= f.text_field :interest %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

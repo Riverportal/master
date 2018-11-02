@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @passenger.name %>
+</p>
+
+<p>
+  <strong>Father name:</strong>
+  <%= @passenger.father_name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @passenger.city %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @passenger.address %>
+</p>
+
+<%= link_to 'Edit', edit_passenger_path(@passenger) %> |
+<%= link_to 'Back', passengers_path %>

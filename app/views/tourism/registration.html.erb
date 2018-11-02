@@ -1,0 +1,41 @@
+<h1>Tourism</h1>
+ <p id="notice"><%= notice %></p> 
+<%= form_tag(tourism_registration_path) do %>
+<div class="field form-group">
+	<%= label_tag(:firstname) %>
+	<div class="col-sm-10">
+		<%= text_field_tag :firstname, params[:firstname], placeholder: "Firstname" %>
+	</div>
+</div>
+<div class="field form-group">
+	<%= label_tag(:lastname) %>
+	<div class="col-sm-10">
+		<%= text_field_tag :lastname, params[:lastname], placeholder: "Lastname" %>
+	</div>
+<div class="field form-group">
+	<%= label_tag(:email) %>
+	<div class="col-sm-10">
+		<%= text_field_tag :email, params[:email], placeholder: "Email" %>
+	</div>
+</div>
+<div class="field form-group">
+	<%= label_tag(:mobile) %>
+	<div class="col-sm-10">
+	<%= text_field_tag :mobile, params[:mobile], placeholder: "Mobile" %>
+	</div>
+</div>
+<div class="field form-group">
+	<%= label_tag(:city) %>
+	<div class="col-sm-10">
+	<%= text_field_tag :city, params[:city], placeholder:"City" %>
+	</div>
+	<div class="field form-group">
+	<%= label_tag(:tourist_place) %>
+	<div class="col-sm-10">
+	<%= text_field_tag :tourist_place, params[:tourist_place], placeholder:"Tourist Place" %>
+	</div>
+</div><br/>
+<%= submit_tag("Register") %>  
+<%= link_to 'Show', root_path %>
+<% end %>
+
